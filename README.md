@@ -81,6 +81,21 @@ We solve three critical challenges in virtual communication:
 
 ---
 </div>
+<h2 align="center">🖼️ Preview Exe</h2>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/programmerbeast2004/builder_base_assets/main/assets/1.png" alt="Preview 1" width="400"/>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/programmerbeast2004/builder_base_assets/main/assets/2.png" alt="Preview 2" width="400"/>
+    </td>
+  </tr>
+</table>
+
+---
+
 
 
 ## 🚀 Getting Started
