@@ -1,12 +1,15 @@
 <div align="center">
-# 🤟 SignBridge: Making Gestures Accessible
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/your-repo-path/assets/signbridge_icon.png" alt="SignBridge Banner" width="700"/>
-
-  **Bridging Communication Gaps with Real-Time Gesture Translation**  
-  [![Live Site](https://img.shields.io/badge/Visit_Website-Hocrux07.netlify.app-brightgreen?style=for-the-badge&logo=netlify)](https://hocruxsignbridge.netlify.app/)
-  [![Download EXE](https://img.shields.io/badge/Download_EXE-Click_Here-blue?style=for-the-badge&logo=windows)](https://drive.google.com/file/d/1uqRw9-hnZu-2L5haH2-s7Sz3mSWkO3Q5/view?usp=sharing)
+  <h1>🤟 SignBridge: Making Gestures Accessible</h1>
+  <img src="https://raw.githubusercontent.com/programmerbeast2004/builder_base_assets/main/assets/team.gif" alt="Team GIF" width="100%"/>
+  <br><br>
+  <strong>Bridging Communication Gaps with Real-Time Gesture Translation</strong>  
+  <br><br>
+  <a href="https://hocruxsignbridge.netlify.app/">
+    <img src="https://img.shields.io/badge/Visit_Website-Hocrux07.netlify.app-brightgreen?style=for-the-badge&logo=netlify" alt="Live Site"/>
+  </a>
+  <a href="https://drive.google.com/file/d/1uqRw9-hnZu-2L5haH2-s7Sz3mSWkO3Q5/view?usp=sharing">
+    <img src="https://img.shields.io/badge/Download_EXE-Click_Here-blue?style=for-the-badge&logo=windows" alt="Download EXE"/>
+  </a>
 </div>
 
 ---
@@ -57,7 +60,13 @@ We solve three critical challenges in virtual communication:
     <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" title="Git" /></td>
   </tr>
 </table>
+---
 
+## 🌐 Website Preview
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/programmerbeast2004/builder_base_assets/main/assets/website.gif" alt="Website Preview" width="100%"/>
+</div>
 
 ---
 
@@ -77,7 +86,7 @@ We solve three critical challenges in virtual communication:
 ## 🚀 Getting Started
 
 ### 💿 Installation (For Users)
-1. **Download** 👉 [SignBridgePro_Setup.exe](https://hocrux07.netlify.app)  
+1. **Download** 👉 [SignBridgePro_Setup.exe]("https://drive.google.com/file/d/1uqRw9-hnZu-2L5haH2-s7Sz3mSWkO3Q5/view?usp=sharing")  
 2. **Install** OBS Studio + Virtual Camera plugin  
 3. **Run** SignBridge and follow the setup wizard
 
