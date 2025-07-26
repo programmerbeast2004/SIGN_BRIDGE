@@ -1,0 +1,105 @@
+
+====================================================
+      SignBridgePro – Local Build Instructions
+====================================================
+
+This guide will help you:
+1. Set up the environment
+2. Generate a standalone .exe file
+3. Create an NSIS installer for distribution
+4. Install required third-party software
+
+------------------------------------------
+📁 Folder Structure Overview:
+------------------------------------------
+- assets/               → Images, fonts, etc.
+- dependencies/         → Required third-party installers (e.g., VC Redist)
+- dist/                 → Generated .exe and bundled resources
+  - assets/             → Runtime assets
+  - model/              → Runtime ML model
+  - caption_output.txt  → Runtime-generated output
+  - opencv_videoio_*.dll → Required OpenCV DLL
+- installers/           → Final NSIS installer + third-party software
+- model/                → ML model files used during build
+- main.py               → Main Python application
+- build_exe.bat         → Script to generate the EXE
+- create_installer.bat  → Script to generate NSIS installer
+- settings.json         → Runtime configuration
+- settings_backup.json  → Backup config
+- SignBridgePro.spec    → PyInstaller configuration
+- simple_installer.nsi  → NSIS script for final installer
+
+------------------------------------------
+🛠️ Step-by-Step Setup Guide:
+------------------------------------------
+
+🔹 STEP 1: Install Requirements
+------------------------------------------
+Make sure Python (preferably 3.9 or above) is installed.
+
+Install required Python libraries:
+```
+pip install opencv-python
+pip install tensorflow
+pip install mediapipe
+pip install numpy
+```
+
+🔹 STEP 2: Run the Application (Test Phase)
+------------------------------------------
+To test locally before building:
+```
+python main.py
+```
+
+🔹 STEP 3: Create EXE (PyInstaller)
+------------------------------------------
+Run:
+```
+build_exe.bat
+```
+✔ This uses `SignBridgePro.spec` to create a `.exe` inside `dist/`.
+
+🔹 STEP 4: Create NSIS Installer
+------------------------------------------
+Install NSIS from: https://nsis.sourceforge.io/Download
+
+Then run:
+```
+create_installer.bat
+```
+
+The final installer `.exe` will be in the `installers/` folder.
+
+------------------------------------------
+⚙️ Additional Dependencies (MUST INSTALL)
+------------------------------------------
+Manually install these software for proper execution:
+
+1. **VC_redist.x64.exe**
+   Location: `dependencies/VC_redist.x64.exe`
+
+2. **OBS Studio & VirtualCam (if required by your app)**
+   Location:
+   - `installers/OBS-Studio-31.1.1-Windows-x64-Installer.exe`
+   - `installers/OBS-VirtualCam2.0.4-Installer.exe`
+
+> 🔹 Install these BEFORE running `SignBridgePro.exe`.
+
+------------------------------------------
+✅ Output Summary:
+------------------------------------------
+✔️ Standalone EXE: `dist/SignBridgePro.exe`
+✔️ Final Installer: `installers/SignBridgePro_Installer.exe`
+✔️ Required Runtime DLL: `dist/opencv_videoio_ffmpeg4110_64.dll`
+
+------------------------------------------
+💡 Notes:
+------------------------------------------
+- Customize `settings.json` for user preferences.
+- If you modify code or model files, repeat Step 3 and Step 4.
+- Always ensure `model/`, `assets/`, and `dependencies/` are bundled when sharing.
+
+----------------------------------------------------
+Project Maintained By: Team Hocrux
+----------------------------------------------------

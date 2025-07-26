@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SignBridge - Every Gesture Matters. Every Voice is Heard. Revolutionary AI-powered sign language translation for seamless communication.">
+    <meta name="keywords" content="sign language, translation, accessibility, AI, communication, technology">
+    <meta name="author" content="SignBridge Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SignBridge - Revolutionary Sign Language Translation">
+    <meta property="og:description" content="Every Gesture Matters. Every Voice is Heard. AI-powered sign language translation for seamless communication.">
+    <meta property="og:type" content="website">
+    
+    <!-- Accessibility -->
+    <meta name="theme-color" content="#0A192F">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <title>SignBridge - Every Gesture Matters. Every Voice is Heard.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="nav-content">
+                <!-- Logo -->
+                <button class="logo-button" onclick="scrollToSection('home')" aria-label="SignBridge home">
+                    <div class="logo-icon">
+                        <img src="logo_sb.png" alt="logo" class="circle-icon">
+                        
+                    </div>
+                    
+                    <span class="logo-text1">SIGN </span>
+                    <span class="logo-text2">BRIDGE</span>
+                </button>
+                
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <button class="nav-link active" data-section="home" onclick="scrollToSection('home')">Home</button>
+                    <button class="nav-link" data-section="features" onclick="scrollToSection('features')">Features</button>
+                    <button class="nav-link" data-section="demo" onclick="scrollToSection('demo')">Demo</button>
+                    <button class="nav-link" data-section="about" onclick="scrollToSection('about')">About</button>
+                    <button class="nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden">
+                <div class="mobile-nav-links">
+                    <button class="mobile-nav-link active" data-section="home" onclick="scrollToSection('home')">Home</button>
+                    <button class="mobile-nav-link" data-section="features" onclick="scrollToSection('features')">Features</button>
+                    <button class="mobile-nav-link" data-section="demo" onclick="scrollToSection('demo')">Demo</button>
+                    <button class="mobile-nav-link" data-section="about" onclick="scrollToSection('about')">About</button>
+                    <button class="mobile-nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <!-- Animated Background -->
+            <div class="hero-background">
+                <div class="gradient-overlay"></div>
+                <div class="floating-orb orb-1"></div>
+                <div class="floating-orb orb-2"></div>
+                <div class="floating-orb orb-3"></div>
+                <img src="./image.png" alt=""  style="width: 100vw;" style="height: 100vh;" >
+            </div>
+
+            <!-- Main Content Card -->
+            <div class="hero-content">
+                <div class="hero-card">
+                    <!-- <div class="hero-glow"></div> -->
+                    
+                    <div class="hero-inner">
+                        <!-- Main Title -->
+                        <h1 class="hero-title">
+                            <span class="title-sign">SIGN</span>
+                            <span class="title-bridge">BRIDGE</span>
+                        </h1>
+
+                        <!-- Slogan -->
+                        <p class="hero-slogan">
+                            Every Gesture Matters. Every Voice is Heard.
+                        </p>
+
+                        <button class="cta-button" onclick="scrollToSection('features')" aria-label="See how SignBridge works">
+                        <i data-lucide="rocket" class="cta-icon"></i>
+                            See How It Works
+                        <i data-lucide="arrow-right" class="cta-arrow"></i>
+                        <div class="button-glow"></div>
+                        </button>
+
+                        <!-- Floating Elements -->
+                        <div class="floating-dot dot-1"></div>
+                        <div class="floating-dot dot-2"></div>
+                        <div class="floating-dot dot-3"></div>
+                        <div class="floating-dot dot-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="section-bg-lines">
+                <div class="bg-line top"></div>
+                <div class="bg-line bottom"></div>
+            </div>
+
+            <div class="container">
+                <!-- Section Title -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        An Intuitive Workflow for
+                        <span class="gradient-text">Seamless Communication</span>
+                    </h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Animated Flowchart -->
+                <div class="flowchart-container">
+                    <div class="flowchart">
+                        <div class="flow-step" data-step="0">
+                            <div class="step-icon">👋</div>
+                            <h3 class="step-title">Gesture</h3>
+                            <p class="step-description">Make sign language gestures</p>
+                        </div>
+                        
+                        <div class="flow-arrow" data-arrow="0">
+                            <svg width="80" height="40" viewBox="0 0 80 40">
+                                <defs>
+                                    <linearGradient id="arrow-gradient-0" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#4DCC7D" />
+                                        <stop offset="100%" stop-color="#3B82F6" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M10 20 L60 20 M50 10 L60 20 L50 30" stroke="url(#arrow-gradient-0)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" data-step="1">
+                            <div class="step-icon">🔄</div>
+                            <h3 class="step-title">Translate</h3>
+                            <p class="step-description">AI processes and translates</p>
+                        </div>
+                        
+                        <div class="flow-arrow" data-arrow="1">
+                            <svg width="80" height="40" viewBox="0 0 80 40">
+                                <defs>
+                                    <linearGradient id="arrow-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#4DCC7D" />
+                                        <stop offset="100%" stop-color="#3B82F6" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M10 20 L60 20 M50 10 L60 20 L50 30" stroke="url(#arrow-gradient-1)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" data-step="2">
+                            <div class="step-icon">⌨️</div>
+                            <h3 class="step-title">Text</h3>
+                            <p class="step-description">Sign-to-text  output</p>
+                        </div>
+                        
+                        <div class="flow-arrow" data-arrow="2">
+                            <svg width="80" height="40" viewBox="0 0 80 40">
+                                <defs>
+                                    <linearGradient id="arrow-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#4DCC7D" />
+                                        <stop offset="100%" stop-color="#3B82F6" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M10 20 L60 20 M50 10 L60 20 L50 30" stroke="url(#arrow-gradient-2)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="flow-step" data-step="3">
+                            <div class="step-icon">📺</div>
+                            <h3 class="step-title">Show</h3>
+                            <p class="step-description">Display on video feed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="feature-cards">
+                    <div class="feature-card" data-card="0">
+                        <div class="card-icon blue-gradient">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <h3 class="card-title">Real-Time Translation</h3>
+                        <p class="card-description">Instantly converts sign language gestures into readable text with high accuracy and minimal latency.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="feature-card" data-card="1">
+                        <div class="card-icon green-gradient">
+                            <i data-lucide="type"></i>
+                        </div>
+                        <h3 class="card-title">Dynamic Text Overlays</h3>
+                        <p class="card-description">Translated text appears directly and clearly on your video feed with customizable positioning.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="feature-card" data-card="2">
+                        <div class="card-icon purple-gradient">
+                            <i data-lucide="volume-2"></i>
+                        </div>
+                        <h3 class="card-title">Integrated Text-to-Speech</h3>
+                        <p class="card-description">Automatically speaks out the translated text for auditory accessibility with natural voices.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="feature-card" data-card="3">
+                        <div class="card-icon orange-gradient">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3 class="card-title">Universal Compatibility</h3>
+                        <p class="card-description">Works flawlessly with Zoom, Google Meet, Teams, and more video conferencing platforms.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section id="demo" class="demo-section">
+            <div class="demo-pattern"></div>
+
+            <div class="container">
+                <!-- Section Title -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        See <span class="logo-text3">SIGN </span>
+                    <span class="logo-text4">BRIDGE</span> in
+                        <span class="gradient-text">Action</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Watch our demo video and explore the detailed presentation to understand how SignBridge transforms communication accessibility.
+                    </p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Demo Content Grid -->
+                <div class="demo-grid">
+                    <!-- Video Section -->
+                    <div class="demo-item">
+                        <div class="demo-card">
+                            <div class="demo-header">
+                                <div class="demo-icon red-gradient">
+                                    <i data-lucide="play"></i>
+                                </div>
+                                <div class="demo-info">
+                                    <h3 class="demo-title">Live Demo Video</h3>
+                                    <p class="demo-subtitle">Watch SignBridge in real-time action</p>
+                                </div>
+                            </div>
+
+                            <!-- Video Embed Frame -->
+                            <div class="video-frame">
+                                <div class="monitor-bezel">
+                                    <div class="screen">
+                                        <div class="video-placeholder" id="video-placeholder">
+                                            <div class="play-button">
+                                                <i data-lucide="play"></i>
+                                            </div>
+                                            <p>Click to load demo video</p>
+                                        </div>
+                                        <iframe 
+                                            id="demo-video"
+                                            src=""
+                                            title="SignBridge Demo Video"
+                                            class="video-iframe hidden"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="screen-reflection"></div>
+                            </div>
+
+                            <div class="demo-footer">
+                                <span class="duration"></span>
+                                <button class="external-link">
+                                    <i data-lucide="external-link"></i>
+                                    View on YouTube
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Presentation Section -->
+                    <div class="demo-item">
+                        <div class="demo-card">
+                            <div class="demo-header">
+                                <div class="demo-icon blue-gradient">
+                                    <i data-lucide="file-text"></i>
+                                </div>
+                                <div class="demo-info">
+                                    <h3 class="demo-title">Project Presentation</h3>
+                                    <p class="demo-subtitle">Detailed technical overview and insights</p>
+                                </div>
+                            </div>
+
+                            <!-- Presentation Embed Frame -->
+                            <div class="presentation-frame">
+                                <div class="monitor-bezel">
+                                    <div class="screen white-bg">
+                                        <iframe
+                                            src="./Hocurx_ppt.pdf"
+                                            title="SignBridge Project Presentation"
+                                            class="presentation-iframe"
+                                            frameborder="0"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="screen-reflection"></div>
+                            </div>
+
+                            <div class="demo-footer">
+                                <span></span>
+                                <button class="external-link" id="open-ppt-btn">
+                                    <i data-lucide="external-link"></i>
+                                        Open in new tab
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Call-to-Action -->
+                <div class="demo-cta">
+                <p class="cta-text">Ready to revolutionize your communication experience?</p>
+    
+                <a href="https://drive.google.com/uc?export=download&id=1uqRw9-hnZu-2L5haH2-s7Sz3mSWkO3Q5">
+                    <button class="cta-button" aria-label="Download SignBridge application">
+                    <i data-lucide="download" class="cta-icon"></i>
+                    Download Now 
+                    </button>
+                </a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-background">
+                <div class="bg-orb orb-left"></div>
+                <div class="bg-orb orb-right"></div>
+            </div>
+
+            <div class="container">
+                <!-- Section Title -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Meet the
+                        <span class="gradient-text">Team</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        A passionate team of developers, designers, and innovators working together to make communication accessible for everyone.
+                    </p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Team Grid -->
+                <div class="team-grid">
+                    <div class="team-member" data-member="0">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <div class="image-border green-gradient">
+                                    <img src="./arjit.jpg" alt="Arjit - Core Development Lead">
+                                </div>
+                                <div class="role-icon green-gradient">
+                                    <i data-lucide="code"></i>
+                                </div>
+                            </div>
+
+                            <h3 class="member-name">Arjit</h3>
+                            <p class="member-role green-gradient-text">Core Development Lead</p>
+                            <p class="member-description">Leading core development, OBS pipeline, and TTS functionality.</p>
+
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/arjit-sharma74?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="social-link" aria-label="Arjit's LinkedIn profile">
+                                    <img src="./linkedin_logo.png" alt="" width="60">
+                                </span></a>
+
+                                <a href="https://github.com/Arjit74"><span class="social-link" aria-label="Arjit's GitHub profile">
+                                    <img src="./GitHub_logo.png" alt="" width="60" height="30" >
+                                </span></a>
+                            </div>
+
+                            <div class="member-glow green-gradient-bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-member="1">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <div class="image-border purple-gradient">
+                                    <img src="./apoorv.jpg" alt="Apoorv - ML Integration Specialist">
+                                </div>
+                                <div class="role-icon purple-gradient">
+                                    <i data-lucide="brain"></i>
+                                </div>
+                            </div>
+
+                            <h3 class="member-name">Apoorv</h3>
+                            <p class="member-role purple-gradient-text">ML Integration Specialist</p>
+                            <p class="member-description">Specializing in machine learning model integration and system performance.</p>
+
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/its-apoorv-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="social-link" aria-label="Apoorv's LinkedIn profile">
+                                    <img src="./linkedin_logo.png" alt="" width="60">
+                                </span></a>
+                                <a href="https://github.com/programmerbeast2004"><span class="social-link" aria-label="Apoorv's GitHub profile">
+                                    <img src="./GitHub_logo.png" alt="" width="60" height="30" >
+                                </span></a>
+                            </div>
+
+                            <div class="member-glow purple-gradient-bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-member="2">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <div class="image-border orange-gradient">
+                                    <img src="./ishita.jpg" alt="Ishita - UI/UX & Brand Designer">
+                                </div>
+                                <div class="role-icon orange-gradient">
+                                    <i data-lucide="palette"></i>
+                                </div>
+                            </div>
+
+                            <h3 class="member-name">Ishita</h3>
+                            <p class="member-role orange-gradient-text">UI/UX & Brand Designer</p>
+                            <p class="member-description">Driving UI overlays, branding, and the creation of pitch assets.</p>
+
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/ishita-g-2591a1310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="social-link" aria-label="Ishita's LinkedIn profile">
+                                    <img src="./linkedin_logo.png" alt="" width="60">
+                                </span></a>
+                                <a href="https://github.com/gitwithish"><span class="social-link" aria-label="Ishita's GitHub profile">
+                                    <img src="./GitHub_logo.png" alt="" width="60" height="30" >
+                                </span></a>
+                            </div>
+
+                            <div class="member-glow orange-gradient-bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-member="3">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <div class="image-border cyan-gradient">
+                                    <img src="./sree.jpg" alt="Sree - QA & Documentation Lead">
+                                </div>
+                                <div class="role-icon cyan-gradient">
+                                    <i data-lucide="test-tube"></i>
+                                </div>
+                            </div>
+
+                            <h3 class="member-name">Sree</h3>
+                            <p class="member-role cyan-gradient-text">QA & Documentation Lead</p>
+                            <p class="member-description">Responsible for comprehensive testing, documentation, and UI quality assurance.</p>
+
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/sreehithathati03?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="social-link" aria-label="Sree's LinkedIn profile">
+                                    <img src="./linkedin_logo.png" alt="" width="60">
+                                </span></a>
+                                <a href="https://github.com/sreehitha3"><span class="social-link" >
+                                    <img src="./GitHub_logo.png" alt="" width="60" height="30" >
+                                </span></a>
+                            </div>
+
+                            <div class="member-glow cyan-gradient-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Stats -->
+                <div class="team-stats">
+                    <div class="stat-item">
+                        <div class="stat-number green-text">4</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number blue-text">100%</div>
+                        <div class="stat-label">Accessibility Focused</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number purple-text">∞</div>
+                        <div class="stat-label">Passion & Dedication</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-background">
+            <div class="footer-line"></div>
+            <div class="footer-orb orb-left"></div>
+            <div class="footer-orb orb-right"></div>
+        </div>
+
+        <div class="container">
+            <div class="footer-content">
+                <!-- Contact Form -->
+                <div class="contact-section">
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-title">Email us your suggestions</h3>
+                                <p class="contact-subtitle">We'd love to hear from you and improve <span class="logo-text5">SIGN </span>
+                    <span class="logo-text6">BRIDGE</span></p>
+                            </div>
+                        </div>
+
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Share your thoughts, suggestions, or feedback about SignBridge..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="form-submit" id="submit-btn">
+                                <i data-lucide="send" class="submit-icon"></i>
+                                <span class="submit-text">Send Message</span>
+                                <div class="submit-spinner hidden">
+                                    <div class="spinner"></div>
+                                    <span>Sending...</span>
+                                </div>
+                                <div class="submit-success hidden">
+                                    <div class="success-dot"></div>
+                                    <span>Message Sent!</span>
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- About & Social Links -->
+                <div class="info-section">
+                    <!-- About SignBridge -->
+                    <div class="info-card">
+                        <h3 class="info-title">About <span class="logo-text5">SIGN </span>
+                    <span class="logo-text6">BRIDGE</span></h3>
+                        <p class="info-text">
+                            SignBridge is revolutionizing communication accessibility by bridging the gap between sign language and spoken language through cutting-edge AI technology. Our mission is to create a world where every gesture matters and every voice is heard.
+                        </p>
+                        <p class="info-subtext">
+                            Built with passion for accessibility, powered by advanced machine learning, and designed for seamless integration into your daily communication workflow.
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <div class="logo-icon" >
+                        
+                    </div>
+                    <span class="logo-text5">SIGN </span>
+                    <span class="logo-text6">BRIDGE</span>
+                </div>
+                
+                <div class="footer-credits">
+                    
+                    <p class="copyright">
+                        © 2025 <span class="logo-text5">SIGN </span>
+                    <span class="logo-text6">BRIDGE</span>. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "confidence_threshold": 0.75,
+  "display_interval": 1.5,
+  "max_caption_length": 25,
+  "auto_save": true,
+  "dark_mode": true,
+  "show_confidence": false,
+  "camera_index": 0
+}

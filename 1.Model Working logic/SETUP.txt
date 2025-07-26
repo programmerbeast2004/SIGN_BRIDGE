@@ -1,0 +1,95 @@
+
+====================================================
+  SignBridgePro – Model Training & Testing Guide
+====================================================
+
+This section handles:
+1. Training the sign language detection model
+2. Testing and generating predictions
+3. Simulating sequences for validation
+
+------------------------------------------
+📁 Folder Structure Overview:
+------------------------------------------
+- model/                       → Stores trained model and label map
+- test_sequence/              → Test images for evaluating model predictions
+- generate_test_sequence.py   → Script to create test image sequences
+- predict_from_images.py      → Predict from image-based test sequences
+- requirements.txt            → List of Python dependencies
+- simulate_sequence_video.py  → Simulate real-time predictions on video
+- test_model.py               → Test model directly on single images
+- train_model.ipynb           → Jupyter notebook to train the model
+
+------------------------------------------
+🛠️ Step-by-Step Instructions:
+------------------------------------------
+
+🔹 STEP 1: Install Python Libraries
+------------------------------------------
+Install the required packages using:
+```
+pip install -r requirements.txt
+```
+
+If that doesn't work, manually install:
+```
+pip install tensorflow
+pip install opencv-python
+pip install numpy
+pip install mediapipe
+```
+
+🔹 STEP 2: Train the Model
+------------------------------------------
+
+We have attached the dataset that we have pushed on Kaggle for our users to download and see the magic behind:
+https://www.kaggle.com/datasets/apoorvmehrotra24/asl-dataset/
+
+Open and run the Jupyter notebook:
+```
+train_model.ipynb
+```
+✔ This will train the model and save it as:
+- `model/sign_model.h5`
+- `model/label_map.npy`
+
+🔹 STEP 3: Generate Test Sequences
+------------------------------------------
+Prepare a test folder and run:
+```
+python generate_test_sequence.py
+```
+
+This will collect or generate images into `test_sequence/` for testing.
+
+🔹 STEP 4: Test Model with Images
+------------------------------------------
+To predict from the static images in the test folder:
+```
+python predict_from_images.py
+```
+
+🔹 STEP 5: Simulate Prediction from Video
+------------------------------------------
+To simulate real-time detection on a video stream or camera:
+```
+python simulate_sequence_video.py
+```
+
+🔹 STEP 6: Direct Model Test
+------------------------------------------
+If you wish to test the model on a single image input or custom logic:
+```
+python test_model.py
+```
+
+------------------------------------------
+📁 Output Files:
+------------------------------------------
+- Trained Model: `model/sign_model.h5`
+- Label Map: `model/label_map.npy`
+- Predictions/Output Logs: as printed in console or saved per script logic
+
+----------------------------------------------------
+Project Maintained By: Team Hocrux
+----------------------------------------------------
